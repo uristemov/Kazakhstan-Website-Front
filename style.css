@@ -1,0 +1,342 @@
+.header {
+  position: sticky;
+  z-index: 50;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+  top: 0;
+  background-color: rgb(170, 209, 231);
+  overflow: visible;
+}
+
+.links {
+  max-width: 500px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+.header a {
+  float: right;
+  display: block;
+  color: white;
+  font-size: 150%;
+  text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+  .links {
+    width: 70%;
+  }
+}
+
+.box {
+  max-width: 1200px;
+  width: 90%;
+  height: fit-content;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  padding: 0px 15px;
+}
+
+.box-item {
+  max-height: 500px;
+  max-width: 280px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: hsla(202, 56%, 79%);
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-item img {
+  max-height: 300px;
+  max-width: 280px;
+  width: 100%;
+  height: 60%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.box-item h3 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.box-item p {
+  color: azure;
+  text-align: center;
+  margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    max-width: 750px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+  }
+  .box-item {
+    flex-direction: row;
+    max-width: none;
+    width: 100%;
+  }
+  .box-item img {
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 10px;
+  }
+  .header a {
+    font-size: 125%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .box {
+    max-width: none;
+    justify-content: center;
+  }
+
+  .box-item {
+    max-height: 500px;
+    max-width: none;
+    flex-direction: column;
+  }
+
+  .header a {
+    font-size: 110%;
+  }
+
+  .box-item img {
+    max-height: 300px;
+    max-width: none;
+    width: 100%;
+    height: 60%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.container-fluid {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container-fluid .row img {
+  display: block;
+  margin: auto;
+  max-height: 325px;
+  max-width: 325px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-fluid .row table {
+  background-color: hsla(202, 56%, 79%);
+}
+
+.container-fluid .row h2 {
+  font-weight: bold;
+}
+
+.container-fluid .col-sm-4 {
+  margin-top: 50px;
+}
+
+.container-fluid .col-sm-6 {
+  margin-top: 25px;
+}
+
+@media (max-width: 576px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .container-fluid img {
+    max-width: none;
+  }
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.ministr {
+  background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+@media (max-width: 870px) {
+  .info {
+    flex-direction: column;
+    padding: 0% 0%;
+    align-items: center;
+  }
+  .ministr .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about_class {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ministr .col-5 {
+    max-width: none;
+  }
+  .ministr .col-7 {
+    max-width: none;
+  }
+
+  .ministr img {
+    max-width: none;
+  }
+
+  .info .table {
+    max-width: none;
+  }
+  .info img {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.about_img {
+  width: 50%;
+  height: 50%;
+}
+
+.about_class {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+
+  flex-direction: column;
+  align-items: center;
+}
+.about_container {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .about_container {
+    flex-direction: column;
+    padding: 0% 0%;
+  }
+}
+.about_class a:hover {
+  background-color: hsl(216, 56%, 63%);
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  background-image: url(https://files.kazakhstan.travel/files/public/201812/24/d5aa313a9e01489e92ffa201da1987db/turkertan-historical.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.table-food {
+  padding: 0 15%;
+}
+.content h1 {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(251, 248, 239);
+}
+.content p {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(251, 248, 239);
+}
+
+@media screen and (min-width: 601px) {
+  .content p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content p {
+    font-size: 15px;
+  }
+}
+.content-food {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 15%;
+  font-size: 4vw;
+  color: rgb(251, 248, 239);
+}
+
+@media (max-width: 850px) {
+  #gallery {
+    flex-direction: column;
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
+.col-3 h1 {
+  text-align: center;
+}
+
+#gallery div h1 {
+  font-size: 100%;
+  color: rgb(212, 198, 214);
+}
+#gallery div img {
+  width: 250px;
+  height: 150px;
+}
+.paintings {
+  padding: 0 15%;
+  color: hsla(344, 96%, 98%, 0.91);
+  font-size: 130%;
+}
+
+@media screen and (max-width: 768px) {
+  .content-food h1 {
+    font-size: 25px;
+  }
+  .paintings h1 {
+    font-size: 25px;
+  }
+  .paintings .row h1 {
+    font-size: 5px;
+  }
+  .paintings img {
+    display: block;
+    margin: auto;
+    max-width: none;
+    width: 100%;
+  }
+  .paintings .col-3 {
+    max-width: none;
+  }
+}
